@@ -19,7 +19,7 @@
            </div>
        
            <div class="slave" id="fun2">
-              <p>Observe the changing pH values on the pH meter display and plot a graph accordingly</p>
+              <p>Observe the changing Conductance values on the display of the Conductometer and plot a graph accordingly</p>
            </div>
            <div class="slave master" id = "fun1">
                <p><b>Click on the Knob of the Burette</b> to start adding Base</p>
@@ -36,7 +36,7 @@
               xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
               width="210mm"
               height="297mm"
-              viewBox="20 60 250.7 200.15"
+              viewBox="20 60 275.7 200.15"
               version="1.1"
               id="svg118"
               inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
@@ -2739,7 +2739,26 @@
              </g>
            </svg>
            
+           
            <div id="chartContainer" style="height: 300px; width: 500px; margin-top: -1000px; margin-left: 750px"></div>
+           
+           <div id="formContainer"
+               style="background-color:floralwhite; height: 120px; width: 356px; margin-top: 20px; margin-left: 740px;">
+       
+               <center> <b>RESULT</b></center>
+               <br>
+               <span style="margin:5px 2px;">Normality of HCL: <input id="normality" type="text" style="width: 100px;"
+                       name="normality" /> N</span>
+       
+               <br>
+       
+               <span style="margin: 5px 2px;">Strength of HCL: <input id="strength" type="text"
+                       style="width: 100px;margin-left: 12px; margin-top: 10px;" name="strength" /> gm/lit</span>
+               <br>
+               <center><button style="margin-top: 10px;" onclick="onSubmit()">Submit</button>
+                   <button style="margin-top: 10px; background-color: red;" onclick="onReset()">Reset</button> </center>
+       
+           </div>
            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
            <script src = "thejs.js">
    
